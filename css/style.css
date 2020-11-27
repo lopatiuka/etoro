@@ -1,0 +1,2827 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+  
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+
+section .container, header .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 117px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  z-index: 5;
+}
+
+header .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header .container .main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1250px;
+}
+
+header .container .main-content p {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #70B429;
+    transition: color 0.3s linear;
+}
+
+header .container .main-content p:hover {
+    color: #2068A5;
+    cursor: pointer;
+}
+
+header .container .main-content p:active {
+    color: #559414;
+}
+
+header .container .main-content img {
+    margin-right: 40px;
+}
+
+header .container .header-country {
+  flex-direction: row;
+}
+
+header .container .header-country img {
+  width: 80px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header .container .header-country .header-image {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: #075829;
+  color: #d9c178;
+}
+
+.intro {
+    width: 100%;
+    background-color: #3E404A;
+}
+
+.intro .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom;
+}
+
+.intro .container .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 80px;
+}
+
+.intro .container .content .video-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 850px;
+    height: auto;
+    margin-right: 0;
+}
+
+.intro .container .content .video-container .video-header {
+    align-self: flex-start;
+}
+
+.intro .container .content .video-container .video-header h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 69px;
+    text-align: left;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 850px;
+}
+
+.intro .container .content .video-container p {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: white;
+}
+
+.intro .container .content .video-container .video {
+    width: 100%;
+    height: 444px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.intro .container .content .video-container iframe {
+    border-radius: 20px;
+}
+
+.intro .container .content .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 380px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 20px;
+    border-radius: 30px;
+    background: white;
+}
+
+.intro .container .content .form-container img {
+    margin-top: 50px;  
+}
+
+.intro .container .content .form-container h2 {
+    width: 298px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #2E2E2E;
+    margin-top: 50px;
+}
+
+.intro .container .content .form-container h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    color: #70B429;
+    margin-bottom: 15px;
+}
+
+.intro .container .content .form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro .container .content .form-container form input {
+    width: 333px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    border-bottom: 1px solid #606060;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #606060;
+    margin-top: 30px;
+    background-color: inherit;
+}
+
+.intro .container .content .form-container form input:first-child {
+    margin-top: 0;
+}
+
+input::-moz-placeholder { 
+    color: #606060; 
+}
+
+input::-webkit-input-placeholder { 
+    color: #606060; 
+}
+
+.intro .container .content .form-container form input:focus {
+    outline: none;
+}
+
+.intro .container .content .form-container form input[type=submit] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 62px;
+    background-color: #70B429;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+}
+
+.intro .container .content .form-container form input[type=submit]:hover{
+    background-color: #2068A5;
+    color: white;
+    cursor: pointer;
+}
+
+.intro .container .content .form-container form input[type=submit]:active{
+    background-color: #559414;
+}
+
+.intro .container .content .form-container form .checkboxes {
+    width: 333px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -5px;
+    margin-top: 10px;
+}
+
+.intro .container .content .form-container form input[type=checkbox] {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    margin-left: 0;
+}
+
+.intro .container .content .form-container form .checkboxes label {
+    display: flex;
+    margin: 5px;
+    margin-left: 0;
+}
+
+.intro .container .content .form-container form .checkboxes label span {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #646464;
+}
+
+.intro .container .content .form-container form .checkboxes label span a {
+    display: inline-block;
+    color: #519ED5;
+    text-decoration: none;
+    transition-property: text-decoration;
+    transition-duration: 0.2s;
+}
+
+.intro .container .content .form-container form .checkboxes label span a:hover {
+    text-decoration: underline;
+}
+
+.intro .ribbon::-webkit-scrollbar{
+    width: 4px;
+    height: 5px;
+}
+
+.logos-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 71px;
+}
+
+.logos-section .container .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 565px;
+    margin: 25px;
+}
+
+.logos-section .container .cards .line {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.logos-section .container .cards .line img {
+    position: relative;
+}
+
+.logos-section .container .cards .first-line img:nth-child(1){
+    top: 104px;
+}
+
+.logos-section .container .cards .first-line img:nth-child(2){
+    left: -59px;
+}
+
+.logos-section .container .cards .first-line img:nth-child(3){
+    left: -67px;
+}
+
+.logos-section .container .cards .first-line img:nth-child(4){
+    top: -20px;
+    left: -78px;
+}
+
+.logos-section .container .cards .second-line img:nth-child(1){
+    top: 30px;
+    left: 66px;
+}
+
+.logos-section .container .cards .second-line img:nth-child(2){
+    top: -43px;
+    left: 23px;
+}
+
+.logos-section .container .cards .second-line img:nth-child(3){
+    left: 34px;
+    top: -37px;
+}
+
+.logos-section .container .cards .second-line img:nth-child(4){
+    left: -5px;
+    top: -96px;
+    z-index: -1;
+}
+
+.logos-section .container .cards .third-line img:nth-child(1){
+    left: 100px;
+    top: -56px;
+}
+
+.logos-section .container .cards .third-line img:nth-child(2){
+    left: 83px;
+    top: -48px;
+}
+
+.logos-section .container .cards .third-line img:nth-child(3){
+    right: -53px;
+    top: -100px;
+}
+
+.logos-section .container .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 585px;
+    margin: 25px;
+}
+
+.logos-section .container .text .logos-header {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 150%;
+    color: #505050;
+}
+
+.logos-section .container .text .logos-intro {
+    font-size: 18px;
+    line-height: 150%;
+    color: #505050;
+}
+
+.logos-section .container .text .main-text {
+    font-size: 14px;
+    line-height: 150%;
+    color: #BABABA;
+}
+
+.about{
+    width: 100%;
+    background: #FAFAFA;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about .container .about-header {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 150%;
+    text-align: center;
+    color: #505050;
+    margin-top: 100px;
+}
+
+.about .container .about-subheader {
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center; 
+    color: #505050;
+    margin-bottom: 50px;
+}
+
+.about .container .about-items {
+    display: flex;
+    margin-bottom: 100px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: auto;
+    white-space: nowrap;
+}
+
+.about .container .about-items::-webkit-scrollbar-button {
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:5px;
+    height:0px
+}
+    
+.about .container .about-items::-webkit-scrollbar-track {
+    background-color: #ecedeec7;
+    border-radius: 10px;
+}
+
+.about .container .about-items::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color:#d3d6d6c5;
+}
+
+.about .container .about-items::-webkit-scrollbar-thumb:hover{
+    background-color:#cccfcfe3;
+}
+
+.about .container .about-items::-webkit-resizer{
+    background-image:url('');
+    background-repeat:no-repeat;
+    width:4px;
+    height:0px
+}
+
+.about .container .about-items::-webkit-scrollbar{
+    width: 4px;
+    height: 5px;
+}
+
+.about .container .about-items .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    min-width: 380px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 15px;
+    white-space: initial;
+}
+
+.about .container .about-items .item .item-header {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;  
+    color: #505050;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.about .container .about-items .item .item-caption {
+    max-width: 317px;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center; 
+    color: #505050;
+    margin-bottom: 50px;
+}
+
+.about .container .about-bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.about .container .about-bottom .bottom-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+.about .container .about-bottom .bottom-item img {
+    margin-top: 70px;
+}
+
+.about .container .about-bottom .bottom-item .item-header {
+    font-size: 26px;
+    color: #0C062B;
+}
+
+.about .container .about-bottom .bottom-item .item-content {
+    font-size: 18px;
+    line-height: 150%;
+    color: #3A3A3A;
+    margin: 0 30px 50px 30px;
+}
+
+.cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 62px;
+    background: #70B429;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s linear;
+}
+
+.cta-button:hover {
+    background-color: #2068A5;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.cta-button:active {
+    background-color: #559414;
+}
+
+.adaptive-link-1000 {
+    display: none;
+}
+
+.about .container .top-stocks {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 100px;
+}
+
+.about .container .top-stocks .hidden-button-1000 {
+    display: none;
+}
+
+.about .container .top-stocks .companies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 687px;
+    margin: 15px;
+}
+
+.about .container .top-stocks .companies .companies-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about .container .top-stocks .companies .companies-item .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.about .container .top-stocks .companies .top {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.about .container .top-stocks .companies .carousel {
+    width: 100%;
+}
+
+.about .container .top-stocks .companies .top .image {
+    height: 125px;
+}
+
+.about .container .top-stocks .companies .top .google-image {
+    background: #144C7B;
+}
+
+.about .container .top-stocks .companies .top .facebook-image {
+    background: #2068A5;
+}
+
+.about .container .top-stocks .companies .top .microsoft-image {
+    background: #31333C;
+}
+
+.about .container .top-stocks .companies .top .amazon-image {
+    background: #1E1E1E;
+}
+
+.about .container .top-stocks .companies .top .apple-image{
+    background: #949494;
+}
+
+.about .container .top-stocks .companies .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+.about .container .top-stocks .companies .details div {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.about .container .top-stocks .companies .details div span {
+    margin-right: 20px;
+}
+
+.about .container .top-stocks .companies .top .details {
+    height: 89px;
+}
+
+.about .container .top-stocks .companies .details .stock {
+    font-size: 20px;
+    line-height: 150%;
+    color: #31333C;
+}
+
+.about .container .top-stocks .companies .details .company {
+    font-size: 18px;
+    line-height: 150%;
+    color: #BABABA;
+}
+
+.about .container .top-stocks .companies .details .price {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    color: #31333C;
+}
+
+.about .container .top-stocks .companies .details .recession {
+    font-size: 18px;
+    line-height: 150%;
+    color: #DD342F;
+    margin-bottom: 2px;
+}
+
+.about .container .top-stocks .companies .details .growth {
+    font-size: 18px;
+    line-height: 150%;
+    color: #70B429;
+    margin-bottom: 2px;
+}
+
+.about .container .top-stocks .companies .bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about .container .top-stocks .companies .bottom .bottom-item {
+    width: 326px;
+}
+
+.about .container .top-stocks .companies .bottom .bottom-item .image {
+    height: 112px;
+}
+
+.about .container .top-stocks .companies .bottom .bottom-item .zynga-image {
+    background-color: #DD342F;
+}
+
+.about .container .top-stocks .companies .bottom .bottom-item .tesla-image {
+    background-color: #DD342F;
+}
+
+.about .container .top-stocks .companies .bottom .bottom-item .netflix-image{
+    background-color: #D81F26;
+}
+
+.about .container .top-stocks .companies .bottom .bottom-item .wd-image {
+    background-color: #2068A5;
+}
+
+.about .container .top-stocks .companies .bottom .bottom-item .yahoo-image {
+    background-color: #5F01D1;
+}
+
+.about .container .top-stocks .companies .bottom .bottom-item .activision-image {
+    background-color: #31333C;
+}
+
+.about .container .top-stocks .companies .bottom .bottom-item .nvidia-image {
+    background-color: #70B429;
+}
+
+.about .container .top-stocks .companies .bottom .bottom-item .twitter-image{
+    background-color: #1DA1F2;
+}
+
+.about .container .top-stocks .companies .bottom .bottom-item .details {
+    height: 80px;
+}
+
+.about .container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 483px;
+    margin: 15px;
+}
+
+.about .container .content .content-header {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 150%;
+    color: #505050;
+    margin-top: 0;
+}
+
+.about .container .content .content-main-text {
+    font-size: 24px;
+    line-height: 150%;
+    color: #505050;
+}
+
+.popular-investors .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 116px;
+}
+
+.popular-investors .container .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 479px;
+    margin-left: 350px;
+    margin-top: -115px;
+    z-index: 1;
+}
+
+.popular-investors .container .text .header {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.popular-investors .container .text .caption {
+    font-size: 24px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.popular-investors .container .text .play-button-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.popular-investors .container .text .play-button-container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 79px;
+}
+
+.popular-investors .container .text .play-button-container .content .country {
+    width: 300px;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.popular-investors .container .text .play-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    min-width: 175px;
+    height: 79px;
+    background: #70B429;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: background-color 0.2s linear;
+}
+
+.popular-investors .container .text .play-button:hover {
+    background-color: #2068A5;
+}
+
+.popular-investors .container .text .play-button:active {
+    background-color: #559414;
+}
+
+.popular-investors .container .text .caution {
+    font-size: 14px;
+    line-height: 19px;
+    color: #BABABA;
+}
+
+.popular-investors .container #carousel2 {
+    top: 0;
+    margin-bottom: -565px;
+}
+
+.popular-investors .container #carousel2 .carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    background: #BABABA;
+    border-radius: 100px;
+    border: none;
+    opacity: initial;
+}
+
+.popular-investors .container #carousel2 .carousel-indicators .active {
+    background-color: #70B429;
+}
+
+.popular-investors .container #carousel2 .carousel-item {
+    transition: transform .5s ease, opacity .75s ease-out;
+    width: 100%;
+    height: 783px;
+}
+
+.popular-investors .container #carousel2 {
+    width: 100%;
+}
+
+.popular-investors .container #carousel2 .carousel-inner .carousel-item:nth-child(1) {
+    background-image: url('../images/one\ girl\ from\ the\ United\ Kingdom.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.popular-investors .container #carousel2 .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url('../images/jaynemesis\ fron\ United\ Kingdom.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.popular-investors .container #carousel2 .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url('../images/wesl3y\ from\ United\ Kingdom.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.popular-investors .container #carousel2 .carousel-inner .carousel-item:nth-child(4) {
+    background-image: url('../images/goodgoing\ from\ United\ Kingdom.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
+.popular-investors .container #carousel-caption .carousel-item {
+    transition: transform .5s ease, opacity .75s ease-out;
+}
+
+.popular-investors .container .carousel .carousel-caption {
+    bottom: 184px;
+    left: 555px;
+    right: initial;
+}
+
+.popular-investors .container .carousel .image-caption {
+    font-size: 24px;
+    line-height: 33px;
+    text-align: left;
+    text-transform: uppercase; 
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.global-leader .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.global-leader .container .header {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 150%;
+    text-align: center;
+    color: #31333C; 
+    margin-top: 100px;
+} 
+
+.global-leader .container .subheader {
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #31333C;
+    margin-bottom: 50px;
+}
+
+.global-leader .container .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.global-leader .container .items-container .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    height: 312px;
+    margin: 15px;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 16px rgba(151, 151, 151, 0.1);
+    border-radius: 10px;
+}
+
+.global-leader .container .items-container .item img {
+    margin: 30px 0 15px 0;
+}
+
+.global-leader .container .items-container .item .header {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center; 
+    color: #505050;
+    margin-top: 0;
+}
+
+.global-leader .container .items-container .item .content {
+    width: 320px;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center; 
+    color: #505050;
+}
+
+.footer {
+    background-color: #31333C;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .container img {
+    margin-top: 50px;
+}
+
+.footer .container .links-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 70px;
+    width: 100%;
+}
+
+.footer .container .links-list hr {
+    margin-right: 50px;
+    margin-left: 0;
+    background-color: white;
+}
+
+.footer .container .links-list div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 50px;
+}
+
+.footer .container .links-list div a {
+    margin: 10px;
+    text-decoration: none;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+
+    color: white;
+}
+
+.footer .risk-disclaimer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #FDFDFD;
+    width: 80%;
+}
+
+.footer .risk-disclaimer h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.footer .risk-disclaimer p {
+    font-size: 16px;
+    line-height: 27px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.footer .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #70B429;
+}
+
+.footer .footer-links a {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #70B429;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.footer .footer-links a:hover {
+    color: #2068A5;
+} 
+
+.footer .footer-links a:active {
+    color: #559414;
+}
+
+.footer .rights {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FDFDFD;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.footer .rights a {
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+@media ( min-width: 2601px ) and ( max-width: 3660px ){
+    body {
+        overflow-x: hidden;
+    }
+
+    header .container .main-content {
+        width: 2025px;
+    }
+
+    header .container .main-content .navigation a {
+        font-size: 20px;
+    }
+
+    .intro .container .content .video-container {
+        height: auto;
+        margin-right: 50px;
+    }
+
+    .intro .container .content .video-container .video {
+        height: 900px;
+    }
+
+    .intro .container .content .form-container {
+        width: 700px;
+        height: auto;
+    }
+
+    .intro .container .content .form-container h2 {
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container h3 {
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container form input {
+        width: 600px;
+        height: 70px;
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 600px;
+    }
+
+    .intro .container .content .form-container form input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+    }
+
+    .intro .container .content .form-container form .checkboxes label span {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .intro .ribbon {
+        display: flex;
+        justify-content: space-between;
+        width: 1920px;
+    }
+
+    .about .container .about-intro .intro-paragraph {
+        width: 976px;
+    }
+
+    .about .container .about-items {
+        width: 2002px;
+    }
+
+    .stock-leaders .container .stock-leaders-items .item {
+        width: 466px;
+    }
+
+    .about .container .about-items .item {
+        width: 587px;
+    }
+
+    .how-works .container .steps .step-item {
+        width: 740px;
+    }
+
+    .how-works .container .steps .step-item .steps-item-description {
+        font-size: 30px;
+    }
+
+    .how-works .container .how-works-bottom {
+        margin-top: 100px;
+    }
+
+    .how-works .container .how-works-bottom .start-now-link {
+        font-size: 25px;        
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(1) {
+        width: 564.42px;
+        height: 519.02px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(3) {
+        width: 781.65px;
+        height: 668.73px;
+    }
+
+    .faq .container .answers details {
+        width: 2550px;
+    }
+
+    .faq .container .answers details summary {
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .faq .container .answers details p {
+        font-size: 30px;
+        width: 2550px;
+        max-width: 2550px;
+        line-height: 35px;
+    }
+
+    .faq .container .answers details summary .round-button {
+        width: 60px;
+        height: 60px;
+        font-size: 50px;
+    }
+
+    .footer .risk-disclaimer h2, .footer .risk-disclaimer p {
+        font-size: 30px;
+    }
+
+    .footer .rights {
+        font-size: 30px;
+    }
+}
+
+@media ( min-width: 1921px) and ( max-width: 2600px ){
+    header .container .main-content {
+        width: 1850px;
+    }
+
+    header .container .main-content .navigation a {
+        font-size: 20px;
+    }
+
+    .intro .container .content .video-container {
+        width: 1323px;
+        height: auto;
+        margin-right: 100px;
+    }
+
+    .intro .ribbon {
+        display: flex;
+        justify-content: space-between;
+        width: 1920px;
+    }
+
+    .about .container .about-intro .intro-paragraph {
+        width: 976px;
+    }
+
+    .about .container .about-items {
+        width: 2002px;
+    }
+
+    .stock-leaders .container .stock-leaders-items .item {
+        width: 466px;
+    }
+
+    .about .container .about-items .item {
+        width: 587px;
+    }
+
+    .how-works .container .steps .step-item {
+        width: 640px;
+    }
+
+    .how-works .container .how-works-bottom {
+        margin-top: 100px;
+    }
+
+    .how-works .container .how-works-bottom .start-now-link {
+        font-size: 25px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(1) {
+        width: 564.42px;
+        height: 519.02px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(3) {
+        width: 781.65px;
+        height: 668.73px;
+        z-index: -1;
+    }
+
+    .faq .container .answers details {
+        width: 2000px;
+    }
+}
+
+@media ( max-width: 1680px ) {
+    header .container .main-content {
+        width: 1270px;
+    }
+
+    header .container .main-content .navigation {
+        margin-left: 0;
+    }
+
+    .intro .container .content .video-container .video-header {
+        align-self: flex-start;
+    }
+
+    .popular-investors .container .text {
+        margin-left: 250px;
+    }
+}
+
+@media ( max-width: 1300px ) {
+    header .container {
+        justify-content: center;
+    }
+
+    header .exposure {
+        margin-right: 50px;
+    }
+
+    header .container .main-content {
+        width: 1183.31px;
+    }
+
+    .intro .container .content .video-container .video-header h1 {
+        text-align: left;
+    }
+
+    .intro .container .content .form-container {
+        width: 313.12px;
+    }
+
+    .intro .container .content .form-container h2 {
+        width: 252.24px;
+        font-size: 18px;
+    }
+
+    .intro .container .content .form-container h2 {
+        font-size: 18px;
+    }
+
+    .intro .container .content .form-container form input {
+        width: 258.04px;
+    }
+
+    .intro .container .content .form-container form input[type = submit]{
+        width: 216.96px;
+        height: 65.39px;
+        font-size: 14px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 258.04px;
+    }
+
+    .about .container .about-items .item .item-detail h2 {
+        font-size: 27px;
+        margin-bottom: 0;
+    }
+
+    .about .container .about-items .item .item-detail p {
+        margin-top: 0;
+    }
+
+    .stock-leaders .container .stock-leaders-items .item {
+        width: 385px;
+    }
+
+    .how-works .container>h2 {
+        font-size: 42px;
+    }
+    
+    .how-works .container .steps hr.third-line {
+        display: none;
+    }
+    
+    .how-works .container .steps .step-item {
+        width: 307px;
+    }
+    
+    .how-works .container .steps .step-item .steps-item-header {
+        width: 307px;
+        font-size: 28px;
+    }
+    
+    .how-works .container .steps .step-item .steps-item-description {
+        width: 307px;
+        font-size: 14px;
+    }
+    
+    .how-works .container .steps .step-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .how-works .container .how-works-bottom {
+        margin-left: 0;
+        width: 100%;
+        height: 350px;
+    }
+    
+    .how-works .container .how-works-bottom .start-now-link {
+       margin: 0 -430px 300px 0;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(1) {
+        width: 371.91px;
+        height: 342px;
+    }
+
+    .how-works .container .how-works-bottom img:nth-child(3) {
+        height: 365.07px;
+        width: 426.72px;
+    }
+
+    .faq .container .faq-header {
+        font-size: 41.85px;
+    }
+
+    .faq .container .faq-caption {
+        font-size: 16.74px;
+    }
+
+    .faq .container {
+        width: 100%;
+    }
+
+    .faq .container .answers {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq .container .answers details {
+        width: 828px;
+    }
+
+    .faq .container .answers details summary {
+        font-size: 14px;
+    }
+
+    .faq .container .answers details p {
+        font-size: 14px;
+    }
+
+    .footer .container .links-list div {
+        margin-right: 20px;
+    }
+
+    .footer .container .links-list hr {
+        margin-right: 20px;
+    }
+
+    .footer .container .links-list div a {
+        font-size: 14px;
+    }
+    
+    .footer .risk-disclaimer h2 {
+        font-size: 32px;
+    }
+    .footer .risk-disclaimer p {
+        font-size: 14px;
+    }
+
+    .footer .rights {
+        font-size: 14px;
+    }
+}
+
+@media( max-width: 1240px ) {
+    .about .container .about-items {
+        width: 100%;
+        margin-right: 15px;
+    }
+
+    .popular-investors .container .text {
+        margin-left: 185px;
+    }
+}
+
+@media ( max-width: 1024px ) {
+    header .container {
+        justify-content: center;
+    }
+
+    header .exposure {
+        margin-right: 50px;
+    }
+
+    header .container .main-content {
+        width: 1000.31px;
+    }
+
+    .intro .container .content .video-container .video-header h1 {
+        text-align: left;
+        width: auto;
+    }
+
+    .intro .container .content .video-container .video-header {
+        align-self: center;
+    }
+
+    .intro .container .content .form-container {
+        width: 313.12px;
+    }
+
+    .intro .container .content .form-container h2 {
+        width: 252.24px;
+        font-size: 18px;
+    }
+
+    .intro .container .content .form-container h2 {
+        font-size: 18px;
+    }
+
+    .intro .container .content .form-container form input {
+        width: 258.04px;
+    }
+
+    .intro .container .content .form-container form input[type = submit]{
+        width: 216.96px;
+        height: 65.39px;
+        font-size: 14px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 258.04px;
+    }
+
+    .intro .ribbon .logos img:nth-child(1){
+        width: 116.18px;
+        height: 59px;
+    }
+
+    .intro .ribbon .logos img:nth-child(2){
+        width: 159.1px;
+        height: 29.5px;        
+    }
+
+    .intro .ribbon .logos img:nth-child(3){
+        width: 47.2px;
+        height: 47.2px;
+    }
+
+    .intro .ribbon .logos img:nth-child(4){
+        width: 92.96px;
+        height: 41.3px;        
+    }
+
+    .intro .ribbon .logos img:nth-child(5){
+        width: 137.01px;
+        height: 47.2px;        
+    }
+
+    .intro .ribbon .logos img:nth-child(6){
+        width: 63.21px;
+        height: 29.5px;       
+    }
+
+    .footer .container .links-list div a {
+        font-size: 14px;
+    }
+    
+    .footer .risk-disclaimer h2 {
+        font-size: 32px;
+    }
+    .footer .risk-disclaimer p {
+        font-size: 14px;
+    }
+
+    .footer .rights {
+        font-size: 14px;
+    }
+}
+
+@media ( max-width: 1000px ) {
+    header .container .main-content {
+        width: 850px;
+    }
+
+    .intro .container .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro .container .content .video-container {
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .intro .container .content .video-container .video-header h1 {
+        font-size: 46px;
+    }
+
+    .intro .container .content .form-container {
+        width: 850px;
+        margin-left: 0;
+    }
+
+    .intro .container .content .form-container h2 {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .intro .container .content .form-container form input {
+        width: 758px;
+    }
+
+    .intro .container .content .form-container form input[type = submit]{
+        margin-bottom: 50px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 758px;
+    }
+
+    .intro .ribbon .logos img:nth-child(1){
+        width: 116.18px;
+        height: 59px;
+    }
+
+    .intro .ribbon .logos img:nth-child(2){
+        width: 159.1px;
+        height: 29.5px;        
+    }
+
+    .intro .ribbon .logos img:nth-child(3){
+        width: 47.2px;
+        height: 47.2px;
+    }
+
+    .intro .ribbon .logos img:nth-child(4){
+        width: 92.96px;
+        height: 41.3px;        
+    }
+
+    .intro .ribbon .logos img:nth-child(5){
+        width: 137.01px;
+        height: 47.2px;        
+    }
+
+    .intro .ribbon .logos img:nth-child(6){
+        width: 63.21px;
+        height: 29.5px;       
+    }
+    
+    .logos-section .container .cards {
+        width: 398px;
+        margin-left: 95px;
+    }
+
+    .logos-section .container .cards .first-line img:nth-child(3) {
+        left: -84px;
+    }
+
+    .logos-section .container .cards .first-line img:nth-child(4) {
+        left: -110px;
+    }
+
+    .logos-section .container .cards .second-line img:nth-child(3) {
+        left: 1px;
+    }
+
+    .logos-section .container .cards .second-line img:nth-child(4) {
+        left: -42px;
+    }
+
+    .logos-section .container .cards .third-line img:nth-child(1) {
+        left: 81px;
+    }
+
+    .logos-section .container .cards .third-line img:nth-child(2) {
+        left: 48px;
+    }
+
+    .logos-section .container .cards .third-line img:nth-child(3) {
+        right: -10px;
+    }
+
+    .logos-section .container .text {
+        width: 386px;
+        margin-left: 45px;
+    }
+
+    .about .container .top-stocks {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about .container .content {
+        width: 798px;
+    }
+
+    .about .container .content .adaptive-button {
+        display: none;
+    }
+
+    .about .container .top-stocks .companies {
+        width: 798px;
+    }
+
+    .about .container .top-stocks .companies .bottom .bottom-item {
+        width: 379px;
+    }
+    
+    .about .container .top-stocks .hidden-button-1000 {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .about .container .hidden-button-1000 .cta-button {
+        width: 289px;
+    }
+
+    .popular-investors .container #carousel2 .carousel-control-next, 
+    .popular-investors .container #carousel2 .carousel-control-prev {
+        width: 5%;
+    }
+
+    .popular-investors .container .text {
+        margin-left: 70px;
+    }
+
+    .global-leader .container .subheader {
+        max-width: 713px;
+    }
+
+    .global-leader .container .items-container .item {
+        width: 247px;
+        height: 350px;
+    }
+
+    .global-leader .container .items-container .item .content {
+        width: 187px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer .container img {
+        margin-top: 30px;
+    }
+
+    .footer .container .links-list div:last-child {
+        margin-right: 0;
+    }
+
+    .footer .container .links-list div a {
+        font-size: 14px;
+    }
+
+    .footer .risk-disclaimer h2 {
+        font-size: 28px;
+    }
+
+    .footer .rights {
+        font-size: 14px;
+    }
+}
+
+@media ( max-width: 768px ) {
+    h2 {
+        font-size: 36px;
+    }
+
+    header .exposure {
+        right: -50px;
+    }
+
+    header .exposure .caption {
+        font-size: 14px;
+    }
+
+    header .container .main-content {
+        width: 670px;
+    }
+
+    .intro .container .content {
+        width: 670px;
+    }
+
+    .intro .container .content .video-container {
+        width: 100%;
+    }
+
+    .intro .container .content .video-container .video-header h1 {
+        font-size: 36px;
+    }
+
+    .intro .container .content .video-container p {
+        font-size: 30px;
+    }
+
+    .intro .container .content .video-container .video {
+        height: 376px;
+    }
+
+    .intro .container .content .form-container {
+        width: 100%;
+    }
+
+    .intro .container .content .form-container form input {
+        width: 580px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 580px;
+    }
+
+    .logos-section .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .logos-section .container .text {
+        width: 670px;
+        margin-left: 0;
+    }
+
+    .logos-section .container .cards {
+        margin-left: 0;
+    }
+
+    .about .container .content {
+        width: 670px;
+    }
+
+    .about .container .top-stocks .companies {
+        width: 670px;
+    }
+
+    .about .container .top-stocks .companies .bottom .bottom-item {
+        width: 317px;
+    }
+
+    .global-leader .container .items-container .item {
+        width: 204px;
+        height: 350px;
+    }
+
+    .global-leader .container .items-container .item img {
+        margin: 0;
+    }
+
+    .global-leader .container .items-container .item .content {
+        width: 144px;
+    }
+
+    .global-leader .container .cta-button {
+        width: 175px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+    
+    .footer .container .links-list div a {
+        font-size: 14px;
+    }
+
+    .footer .rights {
+        font-size: 14px;
+    }
+}
+
+@media ( max-width: 617px ) {
+    header .exposure {
+        right: -230px;
+    }
+}
+
+@media ( max-device-width: 1280px ) {
+    .about .container {
+        width: 100%;
+    }
+
+    .about .container .about-items {
+        width: 100%;
+    }
+}
+
+@media ( max-device-width: 1024px ) {
+    body {
+        width: 1589px;
+    }
+}
+
+@media ( max-device-width: 1000px ) {
+    body {
+        width: 1791px;
+    }
+}
+
+@media ( max-device-width: 880px ) {
+    body {
+        width: 997px;
+    }
+
+    .about .container {
+        width: 100%;
+    }
+
+    .about .container .about-items {
+        width: 100%;
+    }
+}
+
+@media ( max-device-width: 768px ) {
+    body {
+        width: 920px;
+    }
+}
+
+@media ( max-device-width: 700px ) {
+    body {
+        width: 911px;
+    }
+}
+
+@media ( max-device-width: 540px ) {
+    body {
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .wrapper {
+        width: 890px;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 890px;
+    }
+    
+    .intro .container .video-header h1 {
+        margin-left: 0;
+    }
+
+    .intro .container .content {
+        width: initial;
+    }
+
+    .intro .container .content .video-container {
+        width: 800px;
+        height: auto;
+    }
+
+    .intro .container .content .video-container .video-header {
+        align-self: flex-start;
+    }
+
+    .intro .container .content .video-container .video-header h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .intro .container .content .video-container .video-header p {
+        text-align: center;
+    }
+
+    .intro .container .content .form-container {
+        width: 800px;
+        height: auto;
+    }
+
+    .intro .container .content .form-container h2 {
+        width: 500px;
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container h3 {
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container form input {
+        width: 755px;
+        height: 130px;
+        font-size: 50px;
+    }
+
+    .intro .container .content .form-container form .checkboxes label:nth-child(2) input {
+        margin-left: -2px;
+    }
+
+    .intro .container .content .form-container form .checkboxes label:nth-child(3) input {
+        margin-left: -14px;
+        margin-right: 5px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 755px;
+    }
+
+    .intro .container .content .form-container form input[type=checkbox] {
+        width: 100px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    .intro .container .content .form-container form .checkboxes label span {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .intro .container .content .form-container form input[type = submit] {
+        width: 415px;
+        height: 100px;
+        border-radius: 20px;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 100px;
+    }
+
+    .intro .ribbon {
+        height: auto;
+    }
+
+    .intro .ribbon .logos {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .intro .ribbon .logos img {
+        margin-right: 50px;
+    }
+
+    .intro .ribbon .logos img:nth-child(1){
+        width: 196.92px;
+        height: 100px;
+    }
+
+    .intro .ribbon .logos img:nth-child(2){
+        width: 269.66px;
+        height: 50px;       
+    }
+
+    .intro .ribbon .logos img:nth-child(3){
+        width: 80px;
+        height: 80px;
+    }
+
+    .intro .ribbon .logos img:nth-child(4){
+        width: 157.56px;
+        height: 70px;       
+    }
+
+    .intro .ribbon .logos img:nth-child(5){
+        width: 232.22px;
+        height: 80px;      
+    }
+
+    .intro .ribbon .logos img:nth-child(6){
+        width: 107.14px;
+        height: 50px;     
+    }
+
+    .footer .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer .container .links-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .container .links-list div {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer .container .links-list div a {
+        font-weight: 400;
+        margin-right: 30px;
+    }
+
+    .footer .container .links-list hr {
+        width: 288px;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer .risk-disclaimer p {
+        font-size: 30px;
+    }
+
+    .footer .rights {
+        font-size: 30px;
+    }
+}
+
+@media ( max-device-width: 480px ) {
+    body {
+        width: 890px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    .wrapper {
+        width: 890px;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 890px;
+        height: 82px;
+    }
+
+    header .container .main-content {
+        width: 800px;
+    }
+
+    header .container .main-content p {
+        font-size: 30px;
+    }
+
+    .intro .container .video-header h1 {
+        margin-left: 0;
+    }
+
+    .intro .container .content {
+        width: initial;
+    }
+
+    .intro .container .content .video-container {
+        width: 800px;
+        height: auto;
+    }
+
+    .intro .container .content .video-container .video-header {
+        align-self: flex-start;
+    }
+
+    .intro .container .content .video-container .video-header h1 {
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .intro .container .content .video-container  p {
+        font-size: 38px;
+    }
+
+    .intro .container .content .video-container iframe {
+        border-radius: 60px;
+    }
+
+    .intro .container .content .form-container {
+        width: 800px;
+        height: auto;
+        border-radius: 60px;
+    }
+
+    .intro .container .content .form-container h2 {
+        width: 500px;
+        font-size: 41px;
+    }
+
+    .intro .container .content .form-container h3 {
+        font-size: 30px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 755px;
+    }
+
+    .intro .container .content .form-container form .checkboxes label span {
+        font-size: 38px;
+        line-height: 60px;
+    }
+
+    .intro .container .content .form-container form input[type = submit] {
+        width: 580px;
+        height: 100px;
+        border-radius: 100px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .logos-section .container .text {
+        width: 800px;
+    }
+
+    .logos-section .container .text .logos-header {
+        font-size: 53px;
+        text-align: center;
+    }
+
+    .logos-section .container .text .main-text {
+        font-size: 27px;
+    }
+
+    .logos-section .container .cards {
+        width: 870px;
+        margin-left: 20px;
+    }
+
+    .logos-section .container .cards .line img {
+        height: auto;
+    }
+
+    .logos-section .container .cards .first-line img:nth-child(1) {
+        width: 229px;
+    }
+
+    .logos-section .container .cards .first-line img:nth-child(2) {
+        width: 275px;
+    }
+
+    .logos-section .container .cards .first-line img:nth-child(3) {
+        width: 270px;
+    }
+
+    .logos-section .container .cards .first-line img:nth-child(4) {
+        width: 244px;
+    }
+
+    .logos-section .container .cards .second-line img:nth-child(1) {
+        width: 229px;
+    }
+
+    .logos-section .container .cards .second-line img:nth-child(2) {
+        width: 248px;
+    }
+
+    .logos-section .container .cards .second-line img:nth-child(3) {
+        width: 275px;
+    }
+
+    .logos-section .container .cards .second-line img:nth-child(4) {
+        width: 362px;
+    }
+
+    .logos-section .container .cards .third-line img:nth-child(1) {
+        width: 248px;
+    }
+
+    .logos-section .container .cards .third-line img:nth-child(2) {
+        width: 275px;
+    }
+
+    .logos-section .container .cards .third-line img:nth-child(3) {
+        width: 343px;
+    }
+
+    .logos-section .container .text .logos-intro {
+        font-size: 31px;
+    }
+    
+    .about .container .about-header {
+        width: 724px;
+        font-size: 50px;
+        line-height: 50px;
+    }    
+
+    .about .container .about-subheader {
+        font-size: 30px;
+    }
+
+    .about .container .about-items {
+        width: 832px;
+    }
+
+    .about .container .about-items .item {
+        width: 708px;
+        min-width: 708px;
+    }
+
+    .about .container .about-items .item .item-header {
+        font-size: 40px;
+    }
+
+    .about .container .about-items .item .item-caption {
+        max-width: 585px;
+        font-size: 30px;
+    }
+    
+    .about .container .about-items .item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about .container .content {
+        width: 800px;
+    }
+
+    .about .container .content .content-header {
+        font-size: 52px;
+    }
+
+    .about .container .content .content-main-text {
+        font-size: 40px;
+    }
+
+    .about .container .top-stocks .companies {
+        width: 800px;
+    }
+
+    .about .container .top-stocks .companies .top .companies-item,
+    .about .container .top-stocks .companies .bottom .bottom-item {
+        width: 100%;
+    }
+
+    .about .container .top-stocks .companies .bottom .bottom-item {
+        margin-bottom: 30px;
+    }
+
+    .about .container .top-stocks .companies .bottom {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about .container .top-stocks .companies .top .image,
+    .about .container .top-stocks .companies .bottom .bottom-item .image {
+        height: 170px;
+    }
+
+
+    .about .container .top-stocks .companies .top .details,
+    .about .container .top-stocks .companies .bottom .bottom-item .details {
+        height: 150px;
+    }
+
+    .about .container .top-stocks .companies .details .stock {
+        font-size: 30px;
+    }
+
+    .about .container .top-stocks .companies .details .company {
+        font-size: 26px;
+    }
+
+    .about .container .top-stocks .companies .details .price {
+        font-size: 30px;
+    }
+
+    .about .container .top-stocks .companies .details .recession,
+    .about .container .top-stocks .companies .details .growth {
+        font-size: 26px;
+    }
+
+    .about .carousel .carousel-inner {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .popular-investors .container {
+        height: 1712px;
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }
+
+    .popular-investors .container #carousel2 .carousel-indicators {
+        bottom: 25px;
+    }
+
+    .popular-investors .container #carousel2 .carousel-indicators li {
+        width: 20px;
+        height: 20px;
+        margin: 0 20px 0 20px;
+    }
+
+    .popular-investors .container .text {
+        width: 750px;
+        margin-top: -1000px;
+    }
+
+    .popular-investors .container .text .header {
+        font-size: 51px;
+    }
+
+    .popular-investors .container .text .caption {
+        font-size: 40px;
+    }
+
+    .popular-investors .container .text .play-button {
+        width: 280px;
+        min-width: 280px;
+        height: 126px;
+        font-size: 40px;
+    }
+
+    .popular-investors .container .carousel .image-caption {
+        font-size: 33px;
+    }
+
+    .popular-investors .container .text .play-button-container .content .country {
+        font-size: 33px;
+        width: initial;
+    }
+
+    .popular-investors .container .text .caution {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .popular-investors .container #carousel2 .carousel-item {
+        height: 1712px;
+    }
+
+    .popular-investors .container #carousel2 .carousel-inner .carousel-item:nth-child(1) {
+        background-image: url('../images/one\ girl\ from\ the\ United\ Kingdom\ 480.png');
+        background-size: cover;
+    }
+
+    .popular-investors .container #carousel2 .carousel-inner .carousel-item:nth-child(2) {
+        background-image: url('../images/jaynemesis\ fron\ United\ Kingdom\ 480.png');
+        background-size: cover;
+    }
+
+    .popular-investors .container #carousel2 .carousel-inner .carousel-item:nth-child(3) {
+        background-image: url('../images/wesl3y\ from\ United\ Kingdom\ 480.png');
+        background-size: cover;
+    }
+
+    .popular-investors .container #carousel2 .carousel-inner .carousel-item:nth-child(4) {
+        background-image: url('../images/goodgoing\ from\ United\ Kingdom\ 480.png');
+        background-size: cover;
+    }
+
+    .global-leader .container .header {
+        font-size: 50px;
+    }
+
+    .global-leader .container .subheader {
+        font-size: 30px;
+    }
+
+    .global-leader .container .items-container .item {
+        width: 800px;
+    }
+
+    .global-leader .container .items-container .item .header {
+        font-size: 40px;
+    }
+
+    .global-leader .container .items-container .item .content {
+        font-size: 30px;
+        width: 700px;
+    }
+
+    .cta-button {
+        width: 300px;
+        height: 105px;
+        font-size: 30px;
+        border-radius: 20px;
+    }
+
+    .global-leader .container .cta-button {
+        width: 300px;
+    }
+    
+    .footer .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer .container .links-list {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer .container .links-list div {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer .container .links-list div a {
+        font-weight: 400;
+        margin-right: 30px;
+    }
+
+    .footer .container .links-list hr {
+        width: 288px;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer .risk-disclaimer p {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .footer .footer-links {
+        font-size: 26px;
+    }
+
+    .footer .footer-links a {
+        font-size: 26px;
+    }
+
+    .footer .rights {
+        font-size: 30px;
+    }
+}
+
+@media ( max-device-width: 400px ) {
+    header .exposure {
+        right: -500px;
+    }
+}
+
+@media ( max-device-width: 320px ) {
+    body {
+        width: 921.5px;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    h2 {
+        font-size: 73px;
+    }
+
+    h3 {
+        font-size: 46px;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        height: 200px;
+    }
+
+    .logos-section .container .text .logos-header {
+        font-size: 72px;
+        text-align: left;
+    }
+
+    .logos-section .container .text .main-text {
+        font-size: 40px;
+    }
+
+    .about .container .about-header {
+        font-size: 72px;
+        line-height: 76px;
+        text-align: left;
+    }
+
+    .about .container .about-subheader {
+        font-size: 45px;
+    }
+
+    .about .container .content .content-header {
+        font-size: 80px;
+    }
+
+    .about .container .content .content-main-text {
+        font-size: 56px;
+    }
+
+    .about .container .hidden-button-1000 .cta-button {
+        width: 800px;
+    }
+
+    .popular-investors .container .text .header {
+        font-size: 72px;
+    }
+
+    .popular-investors .container .text .caption {
+        font-size: 54px;
+    }
+
+    .popular-investors .container .text .play-button {
+        width: 174px;
+        min-width: 174px;
+    }
+
+    .popular-investors .container .text .header {
+        font-size: 72px;
+    }
+
+    .popular-investors .container .text .caption {
+        font-size: 45px;
+    }
+
+    .popular-investors .container .text .play-button-container .content {
+        height: 200px;
+    }
+
+    .popular-investors .container .carousel .image-caption {
+        font-size: 65px;
+        line-height: 70px;
+    }
+
+    .popular-investors .container .text .play-button-container .content .country {
+        font-size: 70px;
+        width: initial;
+        line-height: 75px;
+    }
+
+    .popular-investors .container .text .caution {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .popular-investors .container .text .play-button {
+        width: 100px;
+        min-width: 235px;
+    }
+
+    .global-leader .container .header {
+        font-size: 72px;
+        text-align: left;
+        width: 800px;
+    }
+
+    .global-leader .container .subheader {
+        max-width: 800px;
+        font-size: 52px;
+        text-align: left;
+    }
+
+    .global-leader .container .items-container .item .header {
+        font-size: 50px;
+    }
+
+    .global-leader .container .items-container .item {
+        height: 490px;
+    }
+
+    .global-leader .container .items-container .item .content {
+        font-size: 47px;
+    }
+
+    .global-leader .container .cta-button {
+        width: 800px;
+    }
+
+    .cta-button {
+        width: 300px;
+        height: 153px;
+        font-size: 50px;
+        border-radius: 30px;
+    }
+
+    .logos-section .container .text .logos-intro {
+        font-size: 47px;
+    }
+
+    header .container .main-content p {
+        font-size: 40px;
+    }
+  
+    .intro .container .content .video-container {
+        width: 800px;
+        height: auto;
+    }
+
+    .intro .container .content .video-container .video-header {
+        align-self: flex-start;
+    }
+
+    .intro .container .content .video-container .video-header h1 {
+        font-size: 60px;
+        text-align: left;
+        line-height: 100px;
+    }
+
+    .intro .container .content .video-container p {
+        font-size: 53px;
+        line-height: 70px;
+    }
+
+    .intro .container .content .video-container .video {
+        height: 580px;
+    }
+
+    .intro .container .content .form-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .intro .container .content .form-container h2 {
+        width: 500px;
+        font-size: 50px;
+        line-height: 65px;
+        margin-bottom: 20px;
+    }
+
+    .intro .container .content .form-container h3 {
+        font-size: 40px;
+    }
+
+    .intro .container .content .form-container form input {
+        width: 707.81px;
+        height: 150px;
+        font-size: 50px;
+        padding-bottom: 5px;
+    }
+    .intro .container .content .form-container form input[type = submit]{
+        height: 120px;
+        width: 463.07px;
+        margin-bottom: 50px;
+        border-radius: 60px;
+        font-size: 40px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 707.81px;
+    }
+
+    .intro .container .content .form-container form input[type=checkbox] {
+        width: 100px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .intro .container .content .form-container form .checkboxes label {
+        margin-bottom: 30px;
+    }
+
+    .intro .container .content .form-container form .checkboxes label span {
+        font-size: 48px;
+        line-height: 65px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer .container .links-list {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer .container .links-list div {
+        width: 300px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .footer .container .links-list div a {
+        font-weight: 400;
+        font-size: 30px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .footer .container .links-list hr {
+        width: 800px;
+        margin-right: 20px;
+    }
+
+    .footer .risk-disclaimer h2 {
+        font-size: 50px;
+        line-height: 65px;
+        font-weight: normal;
+    }
+
+    .footer .risk-disclaimer p {
+        font-size: 43px;
+        line-height: 58px;
+    }
+
+    .footer .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 700px;
+    }
+
+    .footer .footer-links a {
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+
+    .footer .footer-links .adapive-line {
+        display: none;
+    }
+
+    .footer .rights {
+        font-size: 45px;
+    }
+}

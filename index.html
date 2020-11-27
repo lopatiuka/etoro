@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Etoro Trading</title>
+        <link rel = "stylesheet" href = "css/style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" 
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://kit.fontawesome.com/5cee7e9296.js" crossorigin="anonymous"></script>
+         <!-- BEGIN intgrtn -->
+         <script type="text/javascript">
+            (function (d) {
+                if (window.intgrtn) {
+                    return;
+                }
+                var s = d.createElement("script");
+                var date = new Date();
+                s.src = "//mistertrack.click/api/v1/integration/sdk.js?v=" + date.getFullYear().toString() + date.getMonth().toString() + date.getDay().toString() + date.getHours().toString();
+                d.getElementsByTagName("head")[0].appendChild(s);
+            }(document));
+        </script>
+        <!-- END intgrtn -->
+        <style>
+            body {
+                font-family: 'Open Sans';
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class = "container">
+                    <div class = "main-content">
+                        <img src = "images/Logo header.png">
+                        <p>Open Account</p>
+                    </div>
+                </div>
+            </header>
+            <main class = "main">
+                <section id = "home" class = "intro">
+                    <div class = "container">
+                        <div class = "content">  
+                            <div class = "video-container">
+                                <div class = "video-header">
+                                    <h1 data-aos="fade-down" 
+                                    data-aos-duration="1000" 
+                                    data-aos-delay="300">
+                                        Trade with confidence on the world's
+                                        leading social trading platform
+                                    </h1>
+                                </div>  
+                                <p class="video-caption" data-aos="fade-down" data-aos-duration="1000">
+                                    Join eToro today and invest in stocks without paying commission.
+                                </p>
+                                <div class = "video" data-aos="fade-right" data-aos-duration="1300">
+                                    <iframe id = "iframe-video" width="100%" height="100%" src="https://www.youtube.com/embed/75AD9xu7BzA??rel=0&amp;vq=hd1080"
+                                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div id = "form" class = "form-container" data-aos="fade-left" data-aos-duration="1300">
+                                <img src = "images/Logo header.png">
+                                <h2 class = "form-header">Join our Community
+                                    Today!
+                                </h2>
+                                <h3>STEP 1</h3>
+                                <form>
+                                    <input type = "text" placeholder="First Name"/>
+                                    <input type = "text" placeholder="Last Name"/>
+                                    <input type = "email" placeholder="Email adress"/>
+                                    <div class="checkboxes">
+                                        <label>
+                                            <input type="checkbox"><span>By checking this box you agree to subscribe to Traders Expert & 
+                                                its affiliated brands newsletter.</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox"><span>By checking this box you agree to our
+                                                <a href="https://traders.expert/terms-conditions/" target="_blank">Terms</a>,
+                                                <a href="https://traders.expert/privacy-policy/" target="_blank">Privacy</a> &amp; 
+                                                <a href="https://traders.expert/spam-disclaimer/" target="_blank">Spam Disclaimer</a>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox"><span>By checking this box you agree to our
+                                                <a href="https://traders.expert/privacy-policy/" target="_blank">GDPR</a> terms
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <input type = "submit" value = "Open Account"/>
+                                </form>
+                            </div>   
+                        </div>                                                                          
+                    </div>
+                </section>
+                <section class = "logos-section">
+                    <div class="container">
+                        <div class = "cards">
+                            <div class = "first-line line">
+                                <img src = "images/card nike.png" data-aos="fade-right" data-aos-duration="1000">
+                                <img src = "images/card twitter.png" data-aos="fade-down-right" data-aos-duration="1000">
+                                <img src = "images/card microsoft.png" data-aos="fade-down" data-aos-duration="1000">
+                                <img src = "images/card apple.png" data-aos="fade-down-left" data-aos-duration="1000">
+                            </div>
+                            <div class = "second-line line">
+                                <img src = "images/card spotify.png" data-aos="fade-right" data-aos-duration="1000">
+                                <img src = "images/card mcdonalds.png" data-aos="fade-right" data-aos-duration="1000">
+                                <img src = "images/card netflix.png" data-aos="fade-left" data-aos-duration="1000">
+                                <img src = "images/card facebook.png" data-aos="fade-down-left" data-aos-duration="1000">
+                            </div>
+                            <div class = "third-line line">
+                                <img src = "images/card tesla.png" data-aos="fade-up-right" data-aos-duration="1000">
+                                <img src = "images/card hp.png" data-aos="fade-up" data-aos-duration="1000">
+                                <img src = "images/card amazon.png" data-aos="fade-up-left" data-aos-duration="1000">
+                            </div>
+                        </div>
+                        <div class = "text">
+                            <h2 class = "logos-header" data-aos="fade-down" data-aos-duration="1000">100% stocks, 0% commission</h2>
+                            <p class = "logos-intro"
+                            data-aos="fade-left" data-aos-duration="1000">Why pay fees when you don’t have to? Invest in a large variety of stocks on 
+                                eToro without paying any markups, ticketing or management fees. There are no limits on trading 
+                                volume either.
+                            </p>
+                            <p class = "main-text" data-aos="fade-up" data-aos-duration="1000">Zero-commission means that no broker fee will be charged when opening or closing 
+                                the position and does not apply to short or leveraged positions. Other fees may apply. Your capital is 
+                                at risk.<br>
+                            </br>
+                                For clients of eToro AUS Capital Pty Ltd. AFSL 491139, only stocks traded on US stock exchanges are 
+                                available to trade with no commission. Other stocks are offered as derivatives and bear commission. 
+                                Offered through ARSN 637 489 466 and promoted by eToro Australia Pty Ltd. CAR 001281634. For additional 
+                                information, click here.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id = "about" class = "about">
+                    <div class = "container">
+                        <h2 class = "about-header">
+                            eToro is trusted by over 10 Million users! Here's Why:
+                        </h2>
+                        <h3 class = "about-subheader">A wide range of Trading Instruments</h3>
+                        <div class = "about-items">
+                            <div class = "item" data-aos="flip-left" data-aos-duration="1000">
+                                <h3 class = "item-header">Stocks & ETFs</h3>
+                                <p class = "item-caption">
+                                    0% commission means there’s no markup on stocks &amp; ETFs – no matter how much you invest
+                                </p>
+                                <img src = "images/stocks 2.png">
+                            </div>
+                            <div class = "item" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                                <h3 class = "item-header">Cryptocurrencies</h3>
+                                <p class = "item-caption">
+                                    Buy, sell and store Bitcoin and other leading cryptos with ease.
+                                </p>
+                                <img src = "images/crypto 2.png">
+                            </div>
+                            <div class = "item" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                                <h3 class = "item-header">CFD Trading</h3>
+                                <p class = "item-caption">
+                                    Go long or short on FX from just 1 pip. Trade commodities and indices with flexible leverage.
+                                </p>
+                                <img src = "images/cfd 2.png">
+                            </div>
+                        </div>  
+                        <div class = "top-stocks">
+                            <div class = "hidden-button-1000" data-aos="flip-up" data-aos-duration="1000">
+                                <a class = "cta-button">Open Account</a>
+                            </div>
+                            <div class = "companies">
+                                <div class = "top companies-item">
+                                    <div id="carousel-top" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+                                        <div class="carousel-inner">
+                                          <div class="carousel-item active">
+                                            <div class = "image google-image">
+                                                <img src = "images/google 1.png">
+                                            </div>
+                                            <div class = "details">
+                                                <div>
+                                                    <span class = "stock">GOOG</span>
+                                                    <span class = "company">Alphabet</span>
+                                                </div>
+                                                <div>
+                                                    <span class = "price">1769.08</span>
+                                                    <span class = "recession">-7.94 (-0.45%)</span>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <div class = "image facebook-image">
+                                                <img src = "images/facebook 2.png">
+                                            </div>
+                                            <div class = "details">
+                                                <div>
+                                                    <span class = "stock">FB</span>
+                                                    <span class = "company">Facebook</span>
+                                                </div>
+                                                <div>
+                                                    <span class = "price">274.95</span>
+                                                    <span class = "recession">-2 (-0.72%)</span>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <div class = "image microsoft-image">
+                                                <img src = "images/microsoft 2.png">
+                                            </div>
+                                            <div class = "details">
+                                                <div>
+                                                    <span class = "stock">MSFT</span>
+                                                    <span class = "company">Microsoft</span>
+                                                </div>
+                                                <div>
+                                                    <span class = "price">214.57</span>
+                                                    <span class = "recession">-1.94 (-0.9%)</span>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <div class = "image amazon-image">
+                                                <img src = "images/amazon 2.png">
+                                            </div>
+                                            <div class = "details">
+                                                <div>
+                                                    <span class = "stock">AMZN</span>
+                                                    <span class = "company">Amazon</span>
+                                                </div>
+                                                <div>
+                                                    <span class = "price">3139.16</span>
+                                                    <span class = "growth">10.35 (0.33%)</span>
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <div class = "image apple-image">
+                                                <img src = "images/apple 2.png">
+                                            </div>
+                                            <div class = "details">
+                                                <div>
+                                                    <span class = "stock">AAPL</span>
+                                                    <span class = "company">Apple</span>
+                                                </div>
+                                                <div>
+                                                    <span class = "price">120.09</span>
+                                                    <span class = "growth">0.83 (0.7%)</span>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class = "bottom">
+                                    <div class = "bottom-item companies-item">
+                                        <div id="carousel-bottom-left" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <div class = "image zynga-image">
+                                                    <img src = "images/zynga 1.png">
+                                                </div>
+                                                <div class = "details">
+                                                    <div>
+                                                        <span class = "stock">ZNGA</span>
+                                                        <span class = "company">Zynga</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class = "price">7.99</span>
+                                                        <span class = "recession">-0.14 (-1.72%)</span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class = "image tesla-image">
+                                                    <img src = "images/tesla 2.png">
+                                                </div>
+                                                <div class = "details">
+                                                    <div>
+                                                        <span class = "stock">TSLA</span>
+                                                        <span class = "company">Tesla Motors, Inc</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class = "price">441.63</span>
+                                                        <span class = "growth">33.13 (8.11%)</span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class = "image netflix-image">
+                                                    <img src = "images/netflix 2.png">
+                                                </div>
+                                                <div class = "details">
+                                                    <div>
+                                                        <span class = "stock">NFLX</span>
+                                                        <span class = "company">Netflix, Inc</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class = "price">480.08</span>
+                                                        <span class = "recession">-2.04 (-0.42%)</span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class = "image wd-image">
+                                                    <img src = "images/western digital 2.png">
+                                                </div>
+                                                <div class = "details">
+                                                    <div>
+                                                        <span class = "stock">WDC</span>
+                                                        <span class = "company">Western Digital Corp...</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class = "price">7.99</span>
+                                                        <span class = "growth">1.24 (2.99%)</span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class = "image yahoo-image">
+                                                    <img src = "images/yahoo 2.png">
+                                                </div>
+                                                <div class = "details">
+                                                    <div>
+                                                        <span class = "stock">AABA</span>
+                                                        <span class = "company">Altaba Inc</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class = "price">19.64</span>
+                                                        <span class = "growth">0.01 (0.05%)</span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class = "bottom-item companies-item">
+                                        <div id="carousel-bottom-right" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+                                            <div class="carousel-inner">
+                                              <div class="carousel-item active">
+                                                <div class = "image activision-image">
+                                                    <img src = "images/activision 2.png">
+                                                </div>
+                                                <div class = "details">
+                                                    <div>
+                                                        <span class = "stock">ATVI</span>
+                                                        <span class = "company">Activizion Blizzard, ...</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class = "price">77.01</span>
+                                                        <span class = "recession">-0.54 (-0.7%)</span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class = "image nvidia-image">
+                                                    <img src = "images/nvidia 2.png">
+                                                </div>
+                                                <div class = "details">
+                                                    <div>
+                                                        <span class = "stock">ATVI</span>
+                                                        <span class = "company">Activizion Blizzard, ...</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class = "price">77.01</span>
+                                                        <span class = "recession">-0.54 (-0.7%)</span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class = "image twitter-image">
+                                                    <img src = "images/twitter 2.png">
+                                                </div>
+                                                <div class = "details">
+                                                    <div>
+                                                        <span class = "stock">TWTR</span>
+                                                        <span class = "company">Twitter</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class = "price">42.92</span>
+                                                        <span class = "recession">-0.56 (-1.29%)</span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class = "image activision-image">
+                                                    <img src = "images/activision 2.png">
+                                                </div>
+                                                <div class = "details">
+                                                    <div>
+                                                        <span class = "stock">ATVI</span>
+                                                        <span class = "company">Activizion Blizzard, ...</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class = "price">77.01</span>
+                                                        <span class = "recession">-0.54 (-0.7%)</span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <div class = "image activision-image">
+                                                    <img src = "images/activision 2.png">
+                                                </div>
+                                                <div class = "details">
+                                                    <div>
+                                                        <span class = "stock">ATVI</span>
+                                                        <span class = "company">Activizion Blizzard, ...</span>
+                                                    </div>
+                                                    <div>
+                                                        <span class = "price">77.01</span>
+                                                        <span class = "recession">-0.54 (-0.7%)</span>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class = "content">
+                            <h2 class = "content-header">Trade and invest in top stocks and ETFs. </h2>
+                            <p class = "content-main-text">Trade currency pairs, Indices and Commodities via CFDs. 
+                                Investing in the financial markets has never been easier.
+                            </p>
+                            <div class = "adaptive-button" data-aos="flip-up" data-aos-duration="1000">
+                                <a class = "cta-button">Open Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class = "popular-investors">
+                    <div class = "container">
+                        <div id="carousel2" class="carousel slide carousel-fade" data-interval="false">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel2" data-slide-to="1"></li>
+                              <li data-target="#carousel2" data-slide-to="2"></li>
+                              <li data-target="#carousel2" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <!-- <img class="img-fluid" src="images/one girl from the United Kingdom.png"> -->
+                              </div>
+                              <div class="carousel-item">
+                                <!-- <img class="img-fluid" src="images/jaynemesis fron United Kingdom.png"> -->
+                              </div>
+                              <div class="carousel-item">
+                                 <!-- <img class="img-fluid" src="images/wesl3y from United Kingdom.png"> -->
+                              </div>
+                              <div class="carousel-item">
+                                <!-- <img class="img-fluid" src="images/goodgoing from United Kingdom.png"> -->
+                             </div>
+                            </div>
+                            <a class="carousel-control-prev" data-target="#carousel2" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" data-target="#carousel2" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                          </div>
+                          <div class = "text">
+                            <h2 class = "header">Meet our Popular Investors</h2>
+                            <p class = "caption">eToro’s Popular Investor Program recognises talented, savvy, responsible traders 
+                                who share their knowledge. Our top-tier Popular Investors earn up to 2% annually on their assets 
+                                under management.
+                            </p>
+                            <div class = "play-button-container">
+                                <a href = "#" class = "play-button"><i class="fas fa-play"></i></a>
+                                <div class = "content">
+                                    <div id="carousel-caption" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <span class = "image-caption">one girl</span>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <span class = "image-caption">jaynemesis</span>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <p class = "image-caption">wesl3y</p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <p class = "image-caption">goodgoing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class = "country">FROM UNATED KINGDOM</p>
+                                </div>
+                            </div>
+                            <p class = "caution">Past performance is not an indication of future results. This is not investment 
+                                advice. Your capital is at risk.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class = "global-leader">
+                    <div class = "container">
+                        <h2 class = "header">The Global Leader of Social Trading</h2>
+                        <h3 class = "subheader">Millions of users from over 140 countries trust eToro's 'Best of Breed' Social Trading Technology.</h3>
+                        <div class = "items-container">
+                            <div class = "item" data-aos="zoom-out" data-aos-duration="1000">
+                                <img src = "images/register icon.png">
+                                <h2 class = "header">Regulated</h2>
+                                <p class = "content">Our company is regulated by the FCA and CySec</p>
+                            </div>
+                            <div class = "item" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100">
+                                <img src = "images/security icon.png">
+                                <h2 class = "header">Security</h2>
+                                <p class = "content">Your funds are protected by industry-leading security protocols</p>
+                            </div>
+                            <div class = "item" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="200">
+                                <img src = "images/privacy icon.png">
+                                <h2 class = "header">Privacy</h2>
+                                <p class = "content">We will never share your private data without your permission</p>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                            <a class = "cta-button">Open Account</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class = "footer">
+                <div class = "container">
+                    <img src = "images/Logo footer.png">
+                </div>
+                <div class = "risk-disclaimer">
+                    <h2>IMPORTANT RISK DISCLAIMER! PLEASE REVIEW THE BELOW!</h2>
+                    <p>
+                        Risk Warning:CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage. 
+                        About 81.34% of retail investor accounts lose money when trading CFDs. You should consider whether you 
+                        understand how CFDs work and whether you can afford to take the high risk of losing your money. Past 
+                        performance does not constitute a reliable indicator of future results. Future forecasts do not constitute a 
+                        reliable indicator of future performance. Before deciding to trade, you should carefully consider your 
+                        investment objectives, level of experience and risk tolerance. You should not deposit more than you are 
+                        prepared to lose. Please ensure you fully understand the risk associated with the product envisaged and seek 
+                        independent advice, if necessary. “Traders Expert” does not issue advice, recommendations or opinions in 
+                        relation to acquiring, holding or disposing of any financial product. We are an informational webpage 
+                        designed to promote various services & institutions, while the final decision of any visitor ono this site 
+                        rather to pursue any of the displayed offers & promotions are an individual based decision according to your 
+                        financial status and your own desire. Please read our Risk Disclosure document.
+                    </p>
+                </div>
+                <div class = "footer-links">
+                    <a href = "https://traders.expert/privacy-policy/" target="_blank">Privacy Policy</a><span class = "adapive-line">|</span> 
+                    <a href = "https://traders.expert/risk-warning/" target="_blank">Risk Warning</a> <span class = "adapive-line">|</span>
+                    <a href = "https://traders.expert/terms-conditions/" target="_blank">Terms & Conditions</a> <span class = "adapive-line">|</span>
+                    <a href = "https://traders.expert/spam-disclaimer/" target="_blank">Spam Disclaimer</a>
+                    
+                </div>
+                <p class = "rights">© 2020 Traders Expert.</p>
+            </footer>
+        </div>
+        <script>
+            AOS.init();
+        </script>
+        <script>
+            $( '#carousel2' ).click( function( e ){
+                if( e.target.className.includes('carousel-control-prev') )
+                $( '#carousel-caption' ).carousel('prev');
+                else if( e.target.className.includes('carousel-control-next') )
+                $( '#carousel-caption' ).carousel('next');
+            });
+        </script>
+        <script>
+            $('#carousel2 .carousel-indicators li').each(function(){
+                $(this).click(function(){
+                    var index = $(this).attr('data-slide-to');
+                    $('#carousel-caption').carousel(Number.parseInt( index ) );
+                });
+            });
+        </script>
+        <script>
+            $(function($, win) {
+            $.fn.inViewport = function(cb) {
+                return this.each(function(i,el){
+                function visPx(){
+                    var H = $(this).height(),
+                        r = el.getBoundingClientRect(), t=r.top, b=r.bottom;
+                    return cb.call(el, Math.max(0, t>0? H-t : (b<H?b:H)));  
+                } visPx();
+                $(win).on("resize scroll", visPx);
+                });
+            };
+            }(jQuery, window));
+
+            jQuery(function($) { // DOM ready and $ in scope
+
+            $(".counter").inViewport(function(px) { // Make use of the `px` argument!!!
+                // if element entered V.port ( px>0 ) and
+                // if prop initNumAnim flag is not yet set
+                //  = Animate numbers
+                if(px>0 && !this.initNumAnim) { 
+                this.initNumAnim = true; // Set flag to true to prevent re-running the same animation
+                $(this).prop('Counter',0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 1000,
+                    step: function (now) {
+                    $(this).text(Math.ceil(now));
+                    }
+                });         
+                }
+            });
+
+            });     
+        </script>
+        <script>
+            $(".cta-button").each(function(){
+                $(this).click(function() { 
+                    $('html, body').animate({
+                        scrollTop: $("#form").offset().top
+                    }, 1000); 
+                });
+            })
+        </script>
+        <script>
+            $(function () {
+                var waitIntgrtn = setInterval(function () {
+                    if (!window.intgrtn) {
+                        return false;
+                    }
+                    clearInterval(waitIntgrtn);
+        
+                    window.intgrtn.events.on("get.project.details.success", function (response) {
+                        console.log('response', response.data.client.location.areaCode);
+                        console.log('response', response.data.client.location.city);
+                        console.log('response', response.data.client.location.country);
+                        console.log('response', response.data.client.location.countryIsoCode);
+                        document.getElementById( "location" ).innerText = response.data.client.location.country + " RESIDENTS";
+                        let countryCode = response.data.client.location.countryIsoCode;
+                        document.getElementById("flag").src = "flags/special/" + countryCode.toLowerCase() + ".png"
+                    });
+                }, 10);
+            });
+        </script>
+    </body>
+</html>
